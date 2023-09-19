@@ -10,6 +10,7 @@ class PromoMenuView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           'Get 32% Promo',
@@ -19,7 +20,7 @@ class PromoMenuView extends StatelessWidget {
           height: 15,
         ),
         CustomButtomApp(
-          width: 150,
+          width: 130,
           text: 'Remeed',
           iconData: Icons.arrow_forward,
           onPressed: () {},
