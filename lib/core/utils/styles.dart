@@ -15,4 +15,8 @@ abstract class Styles {
     color: textColor,
     fontSize: 18,
   );
+  static TextStyle googleTextStyle20 = GoogleFonts.dmSerifDisplay(
+    fontSize: 20,
+    color: textColor,
+  );
 }

@@ -46,6 +46,7 @@ class IntoViewBody extends StatelessWidget {
             height: 20,
           ),
           CustomButtomApp(
+            width: 300,
             text: 'Get started',
             iconData: Icons.arrow_forward,
             onPressed: () {

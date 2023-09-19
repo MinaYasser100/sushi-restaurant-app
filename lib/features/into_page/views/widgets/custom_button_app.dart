@@ -7,10 +7,12 @@ class CustomButtomApp extends StatelessWidget {
     required this.text,
     this.iconData,
     this.onPressed,
+    required this.width,
   });
   final String text;
   final IconData? iconData;
   final void Function()? onPressed;
+  final double width;
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
@@ -18,7 +20,7 @@ class CustomButtomApp extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(30),
       ),
-      minWidth: 300,
+      minWidth: width,
       height: 60,
       onPressed: onPressed,
       child: Row(
