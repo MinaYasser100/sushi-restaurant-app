@@ -9,16 +9,11 @@ AppBar menuViewAppBar(BuildContext context) {
       Icons.menu,
       color: kDarkColor,
     ),
-    titleSpacing: 50,
-    title: Padding(
-      padding: EdgeInsets.only(
-        left: MediaQuery.of(context).size.width * 0.14,
-      ),
-      child: const Text(
-        'Tokyo',
-        style: TextStyle(
-          color: kDarkColor,
-        ),
+    centerTitle: true,
+    title: const Text(
+      'Tokyo',
+      style: TextStyle(
+        color: kDarkColor,
       ),
     ),
   );
