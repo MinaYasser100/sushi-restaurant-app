@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sushi_restaurant_app/core/utils/assets.dart';
+import 'package:sushi_restaurant_app/core/utils/constant.dart';
 import 'package:sushi_restaurant_app/core/utils/get_pages.dart';
 import 'package:sushi_restaurant_app/core/utils/styles.dart';
 import 'custom_button_app.dart';
@@ -34,11 +35,11 @@ class IntoViewBody extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          Text(
+          const Text(
             'Feel the taste of the most popular japanese food from anywhere and anytime',
             style: TextStyle(
               height: 2,
-              color: Colors.grey[400],
+              color: kSecondeColors,
             ),
           ),
           const SizedBox(

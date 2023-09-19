@@ -8,10 +8,12 @@ abstract class GetPages {
     GetPage(
       name: '/',
       page: () => const IntoView(),
+      transition: Transition.circularReveal,
     ),
     GetPage(
       name: menuView,
       page: () => const MenuView(),
+      transition: Transition.circularReveal,
     )
   ];
 }
