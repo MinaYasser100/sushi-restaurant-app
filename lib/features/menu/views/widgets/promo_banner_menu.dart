@@ -16,7 +16,7 @@ class PromoBannerMenu extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
       ),
       margin: const EdgeInsets.symmetric(horizontal: 25),
-      padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 30),
+      padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
