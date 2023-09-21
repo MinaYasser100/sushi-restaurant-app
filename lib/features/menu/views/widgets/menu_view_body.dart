@@ -3,6 +3,7 @@ import 'package:sushi_restaurant_app/core/model/food_model.dart';
 import 'package:sushi_restaurant_app/core/utils/constant.dart';
 import 'package:sushi_restaurant_app/core/utils/styles.dart';
 import '../../../../core/function/custom_outline_input_border.dart';
+import 'list_view_food_tile.dart';
 import 'promo_banner_menu.dart';
 
 class MenuViewBody extends StatefulWidget {
@@ -34,9 +35,7 @@ class _MenuViewBodyState extends State<MenuViewBody> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const PromoBannerMenu(),
-        const SizedBox(
-          height: 25,
-        ),
+        const SizedBox(height: 25),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 25.0),
           child: TextField(
@@ -46,9 +45,7 @@ class _MenuViewBodyState extends State<MenuViewBody> {
             ),
           ),
         ),
-        const SizedBox(
-          height: 25,
-        ),
+        const SizedBox(height: 25),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 25),
           child: Text(
@@ -59,6 +56,11 @@ class _MenuViewBodyState extends State<MenuViewBody> {
             ),
           ),
         ),
+        const SizedBox(height: 10),
+        Expanded(
+          child: ListViewFoodTile(foodMenu: foodMenu),
+        ),
+        const SizedBox(height: 10),
       ],
     );
   }
