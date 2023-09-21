@@ -11,3 +11,5 @@ const kSecondeColors = Color.fromARGB(255, 189, 189, 189);
 const kDarkColor = Color.fromARGB(255, 33, 33, 33);
 
 const kLightGrey = Color.fromARGB(255, 245, 245, 245);
+
+const kMideumGrey = Color.fromARGB(255, 97, 97, 97);
