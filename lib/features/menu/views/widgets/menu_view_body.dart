@@ -53,7 +53,7 @@ class _MenuViewBodyState extends State<MenuViewBody> {
           padding: const EdgeInsets.symmetric(horizontal: 25),
           child: Text(
             'Food Menu',
-            style: Styles.textStyle18.copyWith(
+            style: Styles.textStyle18Light.copyWith(
               fontWeight: FontWeight.bold,
               color: kDarkColor,
             ),

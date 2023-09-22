@@ -11,9 +11,14 @@ abstract class Styles {
     fontSize: 40,
     color: textColor,
   );
-  static const textStyle18 = TextStyle(
+  static const textStyle18Light = TextStyle(
     color: textColor,
     fontSize: 18,
+  );
+  static const textStyle18Dark = TextStyle(
+    color: kDarkColor,
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
   );
   static TextStyle googleTextStyle20 = GoogleFonts.dmSerifDisplay(
     fontSize: 20,
@@ -22,5 +27,13 @@ abstract class Styles {
   static TextStyle googleTextStyle18 = GoogleFonts.dmSerifDisplay(
     fontSize: 18,
     color: kDarkColor,
+  );
+  static TextStyle googleTextStyle28 = GoogleFonts.dmSerifDisplay(
+    fontSize: 28,
+  );
+  static const textStyle14 = TextStyle(
+    fontSize: 14.0,
+    color: kMideumGrey,
+    height: 2.0,
   );
 }

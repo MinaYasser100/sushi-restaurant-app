@@ -15,3 +15,5 @@ const kLightGrey = Color.fromARGB(255, 245, 245, 245);
 const kMideumGrey = Color.fromARGB(255, 97, 97, 97);
 
 const kAppBarColor = Colors.transparent;
+
+const kStarColor = Color.fromARGB(255, 249, 168, 37);

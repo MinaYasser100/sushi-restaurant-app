@@ -17,7 +17,7 @@ class FoodDetailsView extends StatelessWidget {
         elevation: 0.0,
         foregroundColor: kDarkColor,
       ),
-      body: const FoodDetailsViewBody(),
+      body: FoodDetailsViewBody(foodModel: foodModel),
     );
   }
 }

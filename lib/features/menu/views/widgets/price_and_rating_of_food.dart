@@ -26,9 +26,9 @@ class PriceAndRatingOfFood extends StatelessWidget {
           ),
           Row(
             children: [
-              Icon(
+              const Icon(
                 Icons.star,
-                color: Colors.yellow[800],
+                color: kStarColor,
               ),
               const SizedBox(
                 width: 5,
