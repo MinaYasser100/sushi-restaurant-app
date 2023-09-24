@@ -22,7 +22,6 @@ class PromoMenuView extends StatelessWidget {
         CustomButtomApp(
           width: 130,
           text: 'Remeed',
-          iconData: Icons.arrow_forward,
           onPressed: () {},
         ),
       ],

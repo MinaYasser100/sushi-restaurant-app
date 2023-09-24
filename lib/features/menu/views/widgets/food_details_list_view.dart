@@ -16,6 +16,7 @@ class FoodDetailsListView extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 25.0),
       child: ListView(
+        physics: const BouncingScrollPhysics(),
         children: [
           Image.asset(
             foodModel.imagePath,

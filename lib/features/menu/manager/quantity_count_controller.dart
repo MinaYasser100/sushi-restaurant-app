@@ -4,7 +4,9 @@ class QuantityCountController extends GetxController {
   int quantityCount = 0;
 
   void decearmentQuantity() {
-    quantityCount--;
+    if (quantityCount > 0) {
+      quantityCount--;
+    }
     update();
   }
 

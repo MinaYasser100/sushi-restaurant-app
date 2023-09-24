@@ -5,7 +5,7 @@ class CustomButtomApp extends StatelessWidget {
   const CustomButtomApp({
     super.key,
     required this.text,
-    this.iconData,
+    this.iconData = Icons.arrow_forward,
     this.onPressed,
     required this.width,
   });

@@ -48,7 +48,6 @@ class IntoViewBody extends StatelessWidget {
           CustomButtomApp(
             width: 300,
             text: 'Get started',
-            iconData: Icons.arrow_forward,
             onPressed: () {
               Get.toNamed(GetPages.menuView);
             },
