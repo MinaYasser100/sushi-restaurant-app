@@ -9,13 +9,13 @@ class PriceAndQuantityFoodDetails extends StatelessWidget {
   const PriceAndQuantityFoodDetails({
     super.key,
     required this.foodModel,
+    required this.quantityCountController,
   });
 
   final FoodModel foodModel;
+  final QuantityCountController quantityCountController;
   @override
   Widget build(BuildContext context) {
-    QuantityCountController quantityCountController =
-        Get.put(QuantityCountController());
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [

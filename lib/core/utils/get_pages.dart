@@ -21,6 +21,7 @@ abstract class GetPages {
     GetPage(
       name: kFoodDetailsView,
       page: () => FoodDetailsView(foodModel: Get.arguments as FoodModel),
+      transition: Transition.circularReveal,
     )
   ];
 }
