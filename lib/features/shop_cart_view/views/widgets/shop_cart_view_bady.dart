@@ -8,14 +8,23 @@ class ShopCartViewBady extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<ShopCubit, ShopStates>(
-      builder: (context, state) {
+    return BlocBuilder<ShopCubit, ShopStates>(builder: (context, state) {
+      print(ShopCubit().cart.isEmpty);
+      if (ShopCubit().cart.isNotEmpty) {
         return ListView.builder(
           itemBuilder: (context, index) {
-            return null;
+            return ListTile(
+              title: Text(
+                ShopCubit().cart[index].name,
+              ),
+              subtitle: Text(ShopCubit().cart[index].price),
+            );
           },
+          itemCount: ShopCubit().cart.length,
         );
-      },
-    );
+      } else {
+        return Text('NO Items');
+      }
+    });
   }
 }

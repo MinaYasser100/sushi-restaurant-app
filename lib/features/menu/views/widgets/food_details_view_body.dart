@@ -10,8 +10,9 @@ class FoodDetailsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    QuantityCountController quantityCountController =
-        Get.put(QuantityCountController());
+    QuantityCountController quantityCountController = Get.put(
+      QuantityCountController(),
+    );
     return FoodDetailsViewBlocBuilder(
       foodModel: foodModel,
       quantityCountController: quantityCountController,

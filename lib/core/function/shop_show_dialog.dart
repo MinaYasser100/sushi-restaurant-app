@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:sushi_restaurant_app/core/utils/constant.dart';
-import 'package:sushi_restaurant_app/core/utils/get_pages.dart';
 import 'package:sushi_restaurant_app/core/utils/styles.dart';
 
 Future<dynamic> shopShowDialog(BuildContext context) {
@@ -15,7 +13,8 @@ Future<dynamic> shopShowDialog(BuildContext context) {
         actions: [
           TextButton(
             onPressed: () {
-              Get.offNamed(GetPages.menuView);
+              Navigator.pop(context);
+              Navigator.pop(context);
             },
             child: const Text(
               'Done',
