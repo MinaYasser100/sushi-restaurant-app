@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sushi_restaurant_app/core/utils/constant.dart';
 import 'package:sushi_restaurant_app/features/shop_cart_view/views/widgets/shop_cart_view_bady.dart';
 
 import '../../../core/function/my_cart_app_bar.dart';
@@ -9,6 +10,7 @@ class ShopCartView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: kMainColors,
       appBar: myCartAppBar(),
       body: const ShopCartViewBady(),
     );
