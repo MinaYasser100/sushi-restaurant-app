@@ -1,4 +1,5 @@
 import 'package:sushi_restaurant_app/core/utils/assets.dart';
+import 'package:sushi_restaurant_app/core/utils/variables.dart';
 import 'package:sushi_restaurant_app/features/manager/shop_cubit.dart/shop_states.dart';
 import '../../../core/model/food_model.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -29,9 +30,9 @@ class ShopCubit extends Cubit<ShopStates> {
     emit(ShopAddToCartLoading());
     for (int i = 0; i < quantity; i++) {
       _cart.add(foodModel);
-      print(_cart.length);
-      print(_cart[i].name);
     }
+    print(cart.length);
+    allCart.addAll(cart);
     emit(ShopAddToCartSuccess());
   }
 

@@ -36,4 +36,8 @@ abstract class Styles {
     color: kMideumGrey,
     height: 2.0,
   );
+  static const textStyle30 = TextStyle(
+    fontSize: 30.0,
+    fontWeight: FontWeight.bold,
+  );
 }
