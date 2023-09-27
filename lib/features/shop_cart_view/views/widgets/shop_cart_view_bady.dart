@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'shop_cart_view_bloc_builder.dart';
 
 class ShopCartViewBady extends StatelessWidget {

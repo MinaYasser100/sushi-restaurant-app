@@ -8,15 +8,17 @@ class CustomButtomApp extends StatelessWidget {
     this.iconData = Icons.arrow_forward,
     this.onPressed,
     required this.width,
+    this.buttonColor = kButtonColors,
   });
   final String text;
   final IconData? iconData;
   final void Function()? onPressed;
   final double width;
+  final Color buttonColor;
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
-      color: kButtonColors,
+      color: buttonColor,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(30),
       ),
@@ -28,8 +30,8 @@ class CustomButtomApp extends StatelessWidget {
         children: [
           Text(
             text,
-            style: TextStyle(
-              color: Colors.grey[300],
+            style: const TextStyle(
+              color: textColor,
             ),
           ),
           const SizedBox(

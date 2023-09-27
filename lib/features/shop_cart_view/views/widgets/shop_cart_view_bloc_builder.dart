@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sushi_restaurant_app/core/utils/variables.dart';
-import 'package:sushi_restaurant_app/features/shop_cart_view/views/widgets/build_shop_cart.dart';
 import '../../../manager/shop_cubit.dart/shop_cubit.dart';
 import '../../../manager/shop_cubit.dart/shop_states.dart';
+import 'build_shop_cart.dart';
 import 'no_shop_cart_items.dart';
 
 class ShopCartViewBlocBuilder extends StatelessWidget {
