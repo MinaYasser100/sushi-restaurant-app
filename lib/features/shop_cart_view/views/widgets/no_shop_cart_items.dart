@@ -8,10 +8,12 @@ class NoShopCartItems extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
+    return Center(
       child: Text(
         'NO Items !',
-        style: Styles.textStyle30,
+        style: Styles.textStyle30.copyWith(
+          color: Colors.grey,
+        ),
       ),
     );
   }
